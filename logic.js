@@ -6,8 +6,12 @@ button.addEventListener("click",async ()=>{
     let city=input.value
     const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
     let response=await  fetch(url)
+    if(response.ok==false){
+        info.style.display="flex"
+        info.innerText="Sorry city not found!"
+        info.style.color="crimson"
+    }
     let data=await response.json()
-    console.log(data)
     info.style.display="flex"
     let div=document.querySelectorAll("p")
     div[1].innerText=""

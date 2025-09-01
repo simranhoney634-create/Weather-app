@@ -3,7 +3,8 @@ A simple weather app built using HTML, CSS, and JavaScript. It fetches real-time
 
 🔧 Features~
 - Search weather by city name.  
-- Displays temperature,pressure,weather and wind speed.  
+- Displays temperature,pressure,weather and wind speed.
+- Handles error. 
 - Beautiful background image.
 
 🛠 Tech Stack~
